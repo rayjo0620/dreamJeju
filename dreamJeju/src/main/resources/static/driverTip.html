@@ -17,13 +17,74 @@
 <script src="js/jquery.js"></script>
 <script src="js/jquery-ui.min.js"></script>
 <script>
-    $( function() {
-      $( "#datepicker" ).datepicker();
-    } );
+	$(function() {
+		$("#datepicker").datepicker();
+	});
 </script>
 <style>
+* {
+	font-family: '맑은 고딕';
+	letter-spacing: -0.05em;
+	font-weight: 400;
+}
 
-</style>  
+.default_width {
+	width: 1100px;
+	margin: 0 auto;
+}
+
+.guide {
+	clear: both;
+	margin-bottom: 50px;
+}
+
+.bgArea {
+	width: 245px;
+	float: left;
+	min-height: 550px;
+	border-radius: 10px;
+}
+
+.bgArea {
+	width: 245px;
+	float: left;
+	min-height: 550px;
+	border-radius: 10px;
+}
+
+.titleType01 {
+	clear: both;
+	font-weight: bold;
+	padding-top: 20px;
+	font-size: 40px;
+	text-align: center;
+	color: rgb(219, 122, 12);
+	margin: 20px 0;
+}
+
+.titleType02 {
+	clear: both;
+	font-weight: bold;
+	color: rgb(219, 122, 12);
+	font-size: 28px;
+	padding: 22px 0 20px;
+}
+
+.list_info {
+	clear: both;
+}
+
+.info_subArea {
+	border: 1px solid #ddd;
+	padding: 20px;
+	margin-top: 10px;
+	border-radius: 10px;
+}
+
+.fc_blue {
+	color: #1b64a3 !important;
+}
+</style>
 </head>
 <body>
 
@@ -84,7 +145,92 @@
 	<div id="contents">
 		<div class="section">
 
-			
+			<h1 class="titleType01">운행 팁</h1>
+
+			<div class="guide">
+				<img src="image/seaside.png"
+					style="margin-left: auto; margin-right: auto; display: block;" />
+				<h3 class=" titleType02">엔진 시동이 안됨</h3>
+				<ul class="list_info">
+					<div class="info_subArea">
+						<p>엔진 시동이 불가능 할때에는 아래의 항목을 확인해봐야 합니다.</p>
+						<br>
+						<p>
+							1. <strong>차량용 12V 배터리 방전</strong>
+						</p>
+						<br>
+						<p>&nbsp;&nbsp;1)&nbsp;실내등이나 실외등을 켜놓은 상태로 주차해놓은 경우</p>
+						<p>&nbsp;&nbsp;2)&nbsp;엔진 시동을 걸지 않고 'KEY ON'상태에서 장시간 전자장치 사용한
+							경우</p>
+						<p>&nbsp;&nbsp;3)&nbsp;블랙박스가 상시전원이거나 블랙박스 설치시 올바르지 못한 퓨즈에 연결했을
+							때 누전 발생된 경우</p>
+						<br>
+						<p>
+							2. <strong>기어 레버의 위치 확인</strong>
+						</p>
+						<br>
+						<p>&nbsp;&nbsp;-&nbsp;'P'단 또는 'N'단이 아닌 'R'단이나 'D'단에 기어레버가 위치한
+							경우</p>
+						<br>
+						<p>
+							3. <strong>스마트 키 배터리 방전</strong>
+						</p>
+						<br>
+						<p>&nbsp;&nbsp;-&nbsp;차량용 12V 배터리 문제가 아님에도 불구하고 엔진시동이 불능시 차량
+							스마트 키 배터리(CR 2032) 방전인 경우</p>
+						<br>
+						<p>
+							4. <strong>스티어링 휠이 '잠김'상태인 경우</strong>
+						</p>
+					</div>
+				</ul>
+			</div>
+			<h3 class="titleType02">전기차 팁</h3>
+			<div class="info_subArea">
+				<p>
+					1. <strong>회생 제동을 적극 활용하기</strong>
+				</p>
+				<br>
+				<p>&nbsp;&nbsp;&nbsp;내연기관 차량을 운전하다 하이브리드 FHEV(엔진+전기 모터)나 플러그인
+					하이브리드 PHEV(하이브리드와 동일한 방식에 외부 전원을 연결하여 배터리를 충전), 전기차를 운전하다보면 가장 생소하게
+					느껴지는 것이 회생제동입니다.</p>
+				<br>
+				<p>&nbsp;&nbsp;&nbsp;회생 제동은 평소에는 모터가 엔진 역할을 하다가, 브레이크 패달을 밟으면
+					모터의 역할을 발전기로 바꾸어 운동에너지를 전기에너지로 회수합니다.</p>
+				<p>&nbsp;&nbsp;&nbsp;회수한 전력을 입력 받아 전압을 조정해 배터리를 충전하는 역할을 합니다.</p>
+				<br>
+				<p>&nbsp;&nbsp;&nbsp;하이브리드 방식의 차량은 회생제동에 덜 신경써도 되지만 완전한
+					전기차(BEV)를 운전하게 되면 회생 제동은 상당히 중요하게 부각됩니다.</p>
+				<br>
+				<p>&nbsp;&nbsp;&nbsp;이유는 주행거리와 관련된 전비 영향에 매우 큰 영향을 미칠 수 있기
+					때문입니다.</p>
+				<br>
+				<p>&nbsp;&nbsp;&nbsp;물론 회생제동을 0단계로 세팅한 채 타력주행을 하여 주행 컨트롤을 잘 한다면
+					상관이 없겠지만 그렇지 읺다면 회생제동에 신경을 쓸 수 밖에 없게 됩니다.</p>
+				<br>
+				<p>&nbsp;&nbsp;&nbsp;회생제동을 단계별로 운전자의 성향에 맞게 세팅하는것이 좋고 회생 제동을 적극
+					활용하면 브레이크 패드 사용 개입이 감소하여 분진가루를 줄이고 패드 수명을 늘릴 수 있습니다.</p>
+				<br>
+				<p>
+					2. <strong>지하 주차장에 주차하기</strong>
+				</p>
+				<br>
+				<p>&nbsp;&nbsp;&nbsp;전기차 주차는 가급적 지하주차장에 주차하는 것이 좋다. 배터리는 외부온도에
+					크게 영향을 미치기 때문에 겨울에는 배터리 성능이 크게 떨어진다.</p>
+				<br>
+				<p>
+					&nbsp;&nbsp;&nbsp;주된 원인은 전기차의 제 난방장치인 '<strong>PTC 히터</strong>'
+					때문인데 온도에 따른 배터리 성능의 저하 요인도 적용됨. 여름철도 마찬가지이다.
+				</p>
+				<br>
+				<p>&nbsp;&nbsp;&nbsp;겨울철 전기차 관리팁의 핵심은 날씨에 차량이 직접 노출되는 것을 피하는
+					일이다. 날씨를 바꿀 수는 없지만, 가능한 외부 주차를 하지 않고 실내 주차를 하는 등 온도 변화를 예방하는 조치가
+					필요하다.</p>
+
+				<p>&nbsp;&nbsp;&nbsp;야외 주차를 피할 수 없다면, 충전기를 연결해 미리 차량을 예열하는 것이 큰
+					도움이 된다. 디젤기관 차량에 시동을 걸고 출발 전 몇 분씩 예열하는 것과 비슷한 개념이다. 엔진 대신 배터리 작동
+					온도를 적당히 올려주는 게 좋다는 얘기다.</p>
+			</div>
 
 		</div>
 	</div>
