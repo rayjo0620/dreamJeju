@@ -1,0 +1,10 @@
+
+
+table { min-width: 100%; border-collapse: collapse; }
+.boardList { }
+.boardList table { border-bottom: 1px solid #666; }
+.boardList table :is(th, td) { padding: 20px 24px; }
+.boardList table thead th { background-color: #EEE; border-top: 2px solid #000; }
+.boardList table tbody tr + tr td { border-top: 1px solid #EEE; }
+.boardList table tbody tr td:first-child,
+.boardList .alignCenter { text-align: center; }

@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/*===============================================================================
+* Reset
+===============================================================================*/
+* { margin: 0; padding: 0; font-family: inherit; font-size: 100%; border: 0; box-sizing: border-box; }
+img { max-width: 100%; }
+ul, ol { list-style: none; }
+button { background-color: transparent; }
+a { font-size: inherit; color: inherit; text-decoration: none; }
+
+/*===============================================================================
+* Base style
+===============================================================================*/
+body { font: 14px 'Noto Sans KR', sans-serif; line-height: 1; }
+
+
+/*===============================================================================
+* Common style
+===============================================================================*/
+.section { margin: 0 auto; max-width: 1200px; }
+.rowGrid { display: flex; gap: 20px; }
+
+.subTitle { margin-bottom: 40px; padding: 0 0 20px; font-size: 28px; font-weight: 900; text-align: center; position: relative; }
+.subTitle:after { content: ""; margin: 0 auto; width: 80px; height: 2px; background-color: #e95f16; position: absolute; right: 0; bottom: 0; left: 0; }
+
+.newsList .item { display: flex; gap: 20px; position: relative; overflow: hidden; }
+.newsList .item + .item { margin-top: 40px; }
+.newsList .item .photo { flex: 0 0 auto; width: 120px; height: 120px; position: relative; overflow: hidden; }
+.newsList .item .photo img { margin: auto; max-width: 200%; position: absolute; top: -100%; right: -100%; bottom: -100%; left: -100%; }
+.newsList .item .title { padding-top: 10px; font-size: 20px; font-weight: 700; }
+.newsList .item .txt { display: -webkit-box; margin-top: 20px; -webkit-line-clamp: 3; -webkit-box-orient: vertical; white-space: normal; line-height: 1.4; overflow: hidden; }
+.newsList .item a { width: 100%; height: 100%; font-size: 0; position: absolute; top: 0; left: 0; }
+
+
+/*===============================================================================
+* Header
+===============================================================================*/
+header { background: linear-gradient(45deg, #db7a0c, #e95f16); border-bottom: 4px solid #e95f16; position: sticky; top: 0; z-index: 1000;}
+header h1 { font: 32px 'Merienda', cursive; font-weight: 800; color: #FFF; letter-spacing: -0.02rem; text-shadow: 2px 0 2px rgba(0,0,0,0.5); }
+header h1 a { display: inline-block; position: relative; overflow: hidden; }
+header h1 a:after { content: ""; width: 300px; height: 200px; border: 4px solid #db7a0c; border-radius: 50%; position: absolute; top: 40%; left: -60%; transform: rotate(-15deg); }
+
+header .section { display: flex; justify-content: space-around; align-items: center; padding: 24px 0; }
+header nav { margin: 0 auto; padding: 12px 24px; background-color: rgba(0,0,0,0.1); border-radius: 50px; }
+header nav a { display: block; padding: 8px; white-space: nowrap; text-align: center; }
+header nav > ul { display: flex; align-items: center; }
+header nav > ul li { min-width: 120px; font-size: 18px; font-weight: 600; position: relative; }
+header nav > ul > li { color: #FFF; }
+header nav > ul > li ul { display: none; padding: 10px; font-size: 13px; color: #000; background-color: #FFF; border: 2px solid #e95f16; border-radius: 8px; box-shadow: 1px 1px 4px rgba(0,0,0,0.4); position: absolute; top: 100%; left: 0; transform: translateX(-10%); }
+header nav > ul > li ul li + li { margin-top: 4px; padding-top: 4px; border-top: 1px solid rgba(0,0,0,0.2); }
+header nav > ul > li:hover > a { background-color: #db7a0c; border-radius: 50px; }
+header nav > ul > li:hover ul { display: block; }
+header nav > ul > li:hover ul a:hover { color: #e95f16; }
+header .option a { display: inline-block; padding: 12px 24px; font-size: 16px; font-weight:700; color: #FFF; background-color: rgba(255,255,255,0.2); border: 2px solid rgba(255,255,255,0.1); border-radius: 50px; }
+
+/*===============================================================================
+* Contents
+===============================================================================*/
+#contents { padding: 40px 0; }
+
+
+/*===============================================================================
+* Footer
+===============================================================================*/
+footer { padding: 40px 0; color: #FFF; letter-spacing: 1px; text-align: center; background-color: #333; }

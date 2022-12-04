@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeju Pick</title>
+
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- 외부 라이브러리 -->  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />  
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <link rel="stylesheet" href="css/jquery-ui.min.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script>
+    $( function() {
+      $( "#datepicker" ).datepicker();
+    } );
+  </script>
+</head>
+<body>
+  
+  <!-- Header -->
+  <header>
+    <div class="section">
+      <h1>
+        <a href="index.html">Jeju Pick</a>
+      </h1>
+      <!-- Navigation -->
+      <nav>
+        <ul>
+          <li>
+            <a href="#">추천</a>
+            <ul>
+              <li><a href="#">Spot 추천</a></li>
+              <li><a href="#">경로상 추천</a></li>              
+            </ul>
+          </li>
+          <li>
+            <a href="#">맞춤</a>
+            <ul>
+              <li><a href="#">관광지</a></li>
+              <li><a href="#">숙소</a></li>              
+            </ul>
+          </li>
+          <li>
+            <a href="#">차량</a>
+            <ul>
+              <li><a href="#">주의사항</a></li>
+              <li><a href="driverTip.html">운행 팁</a></li>
+              <li><a href="rentCarList.html">렌트</a></li>
+              <li><a href="#">충전소</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">교통정보</a>
+            <ul>
+              <li><a href="#">사고현황</a></li>
+              <li><a href="#">예방 팁</a></li>
+              <li><a href="#">실시간 교통정보</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Shop</a>
+            <ul>
+              <li><a href="#">타이어 구매</a></li>
+              <li><a href="#">굿즈 구매</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">커뮤니티</a>
+            <ul>
+              <li><a href="expList.html">경험 공유</a></li>
+              <li><a href="tireList.html">타이어 공유</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- // Navigation -->
+      <div class="option">
+        <a href="#">로그인</a>
+      </div>
+    </div>
+  </header>
+  <!-- // Header -->
+
+
+  <!-- Contents -->
+  <div id="contents">
+    <div class="section">
+
+      <!-- Slide -->
+      <div class="swiper introSlider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><p><img src="images/main/bannerItem.jpg" alt=""></p></div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">Slide 4</div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <script>
+        var swiper = new Swiper(".introSlider", {
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },          
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      </script>
+      <!-- // Slide -->
+
+      <div class="rowGrid">
+        <!--Google Map -->
+        <div class="infoMap">        
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d426145.95317156165!2d126.20417540393672!3d33.44239504945342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x350ce3544cc84045%3A0x66bc36d2981ebf31!2z7KCc7KO87Yq567OE7J6Q7LmY64-E!5e0!3m2!1sko!2skr!4v1669958385197!5m2!1sko!2skr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                
+        </div>
+        <!--// Google Map -->
+
+        <div class="mainItem">
+          <!-- Calendar -->
+          <div id="datepicker"></div>
+          <!-- // Calendar -->
+
+          <!-- 바로가기 -->
+          <div class="links">
+            <p>
+              <a href="#">관광지 &amp; 숙소</a>
+            </p>
+            <p>
+              <a href="#">경로상 추천</a>
+            </p>            
+          </div>
+          <!-- //바로가기 -->
+        </div>
+      </div>
+
+
+      <div class="bannerArea">
+        <div class="section">
+          <a href="#">Travel plan of Your Choice</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- // Contents -->
+
+  <!-- Footer -->
+  <footer>
+    <div class="section">
+      &copy;JEJU PICK 2022. All rights reserved.
+    </div>
+  </footer>
+  <!-- // Footer -->
+
+</body>
+</html>
