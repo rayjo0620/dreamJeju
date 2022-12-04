@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jeju Pick</title>
+
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/main.css">
+
+<!-- 외부 라이브러리 -->
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<link rel="stylesheet" href="css/jquery-ui.min.css">
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script>
+	$(function() {
+		$("#datepicker").datepicker();
+	});
+</script>
+<style>
+.joinForm {
+	position: absolute;
+	width: 400px;
+	height: 400px;
+	padding: 30px, 20px;
+	background-color: #FFFFFF;
+	text-align: center;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 15px;
+}
+
+.joinForm h2 {
+	text-align: center;
+	margin: 30px;
+}
+
+.textForm {
+	border-bottom: 2px solid #adadad;
+	margin: 30px;
+	padding: 10px 10px;
+}
+
+.id {
+	width: 100%;
+	border: none;
+	outline: none;
+	color: #636e72;
+	font-size: 16px;
+	height: 25px;
+	background: none;
+}
+
+.pw {
+	width: 100%;
+	border: none;
+	outline: none;
+	color: #636e72;
+	font-size: 16px;
+	height: 25px;
+	background: none;
+}
+
+.name {
+	width: 100%;
+	border: none;
+	outline: none;
+	color: #636e72;
+	font-size: 16px;
+	height: 25px;
+	background: none;
+}
+
+.email {
+	width: 100%;
+	border: none;
+	outline: none;
+	color: #636e72;
+	font-size: 16px;
+	height: 25px;
+	background: none;
+}
+
+.nickname {
+	width: 100%;
+	border: none;
+	outline: none;
+	color: #636e72;
+	font-size: 16px;
+	height: 25px;
+	background: none;
+}
+
+.cellphoneNo {
+	width: 100%;
+	border: none;
+	outline: none;
+	color: #636e72;
+	font-size: 16px;
+	height: 25px;
+	background: none;
+}
+
+.btn {
+	position: relative;
+	left: 0%;
+	transform: translateX(-50%);
+	margin-bottom: 20px;
+	width: 20%;
+	height: 40px;
+	background: linear-gradient(125deg, #fad048, #f89654, #e96b04);
+	background-position: left;
+	background-size: 200%;
+	color: white;
+	font-weight: bold;
+	border: none;
+	cursor: pointer;
+	transition: 0.4s;
+	display: inline;
+}
+
+.btn2 {
+	position: relative;
+	left: 20%;
+	transform: translateX(-50%);
+	margin-bottom: 20px;
+	width: 20%;
+	height: 40px;
+	background: linear-gradient(125deg, #72db5d, #2be234, #059905);
+	background-position: right;
+	background-size: 200%;
+	color: white;
+	font-weight: bold;
+	border: none;
+	cursor: pointer;
+	transition: 0.4s;
+	display: inline;
+}
+
+.btn:hover {
+	background-position: right;
+}
+
+button {
+	position: absolute;
+	left: 300px;
+	top: 200px;
+}
+
+.checkemail {
+	position: absolute;
+	left: 300px;
+	top: 430px;
+}
+
+h2 {
+	font-weight: bold;
+	font-size: xx-large;
+	font-size: 35px;
+	color: #f58b34;
+	text-align: center;
+}
+
+.link {
+	position: relative;
+	right: 20%;
+	transform: translateX(-50%);
+	margin-bottom: 20px;
+	width: 10px;
+	height: 40px;
+	background: linear-gradient(125deg, #fad048, #f89654, #e96b04);
+	background-position: left;
+	background-size: 200%;
+	font-weight: bold;
+	font-size: 25px;
+	border: none;
+	cursor: pointer;
+	transition: 0.4s;
+	display: inline;
+}
+
+.link2 {
+	position: relative;
+	left: 20%;
+	transform: translateX(-50%);
+	margin-bottom: 20px;
+	width: 20%;
+	height: 40px;
+	background: linear-gradient(125deg, #72db5d, #2be234, #059905);
+	background-position: right;
+	background-size: 200%;
+	color: white;
+	font-weight: bold;
+	font-size: 25px;
+	border: none;
+	cursor: pointer;
+	transition: 0.4s;
+	display: inline;
+}
+</style>
+</head>
+<body>
+
+	<!-- Header -->
+	<header>
+		<div class="section">
+			<h1>
+				<a href="index.html">Jeju Pick</a>
+			</h1>
+			<!-- Navigation -->
+			<nav>
+				<ul>
+					<li><a href="#">추천</a>
+						<ul>
+							<li><a href="#">Spot 추천</a></li>
+							<li><a href="#">경로상 추천</a></li>
+						</ul></li>
+					<li><a href="#">맞춤</a>
+						<ul>
+							<li><a href="#">관광지</a></li>
+							<li><a href="#">숙소</a></li>
+						</ul></li>
+					<li><a href="#">차량</a>
+						<ul>
+							<li><a href="#">주의사항</a></li>
+							<li><a href="driverTip.html">운행 팁</a></li>
+							<li><a href="rentCarList.html">렌트</a></li>
+							<li><a href="#">충전소</a></li>
+						</ul></li>
+					<li><a href="#">교통정보</a>
+						<ul>
+							<li><a href="#">사고현황</a></li>
+							<li><a href="#">예방 팁</a></li>
+							<li><a href="#">실시간 교통정보</a></li>
+						</ul></li>
+					<li><a href="#">Shop</a>
+						<ul>
+							<li><a href="#">타이어 구매</a></li>
+							<li><a href="#">굿즈 구매</a></li>
+						</ul></li>
+					<li><a href="#">커뮤니티</a>
+						<ul>
+							<li><a href="expList.html">경험 공유</a></li>
+							<li><a href="tireList.html">타이어 공유</a></li>
+						</ul></li>
+				</ul>
+			</nav>
+			<!-- // Navigation -->
+			<div class="option">
+				<a href="login.html">로그인</a>
+			</div>
+		</div>
+	</header>
+	<!-- // Header -->
+
+
+	<!-- Contents -->
+	<div id="contents">
+		<div class="section">
+			<div id="container">
+				<form action="doJoin" method="POST" class="joinForm"
+					onsubmit="DoJoinForm__submit(this); return false;">
+
+					<h2>회원 가입</h2>
+
+					<div class="textForm">
+						<input name="name" type="password" class="name" placeholder="이름"
+							required>
+					</div>
+
+					<div class="textForm">
+						<input name="loginId" type="text" class="id" placeholder="아이디"
+							autofocus required>
+						<button type="button" onclick="fn_dbCheckId()" name="dbCheckId"
+							class="checkId">중복 확인</button>
+						<input type="hidden" name="idDuplication" value="idUncheck" />
+					</div>
+
+					<div class="textForm">
+						<input name="loginPw" type="password" class="pw"
+							placeholder="비밀번호" required>
+					</div>
+
+					<div class="textForm">
+						<input name="loginPwConfirm" type="password" class="pw"
+							placeholder="비밀번호 확인" required>
+					</div>
+
+					<div class="textForm">
+						<input name="email" type="text" class="email" placeholder="이메일"
+							required> <input type="button"
+							onclick="fn_dbcheckEmail()" name="dbCheckEmail"
+							class="checkemail" value="이메일 확인"> <input type="hidden"
+							name="emailDuplication" value="emailUncheck" />
+					</div>
+
+					<div class="textForm">
+						<input name="nickname" type="text" class="nickname"
+							placeholder="닉네임">
+					</div>
+
+					<div class="textForm">
+						<input name="cellphoneNo" type="number" class="cellphoneNo"
+							placeholder="전화번호" required>
+					</div>
+
+					<!-- <input type="submit" class="btn" value="완료" a href="Mainpage.html" >  -->
+					<!-- <input type="reset" class="btn2" value="취소" a href="LOGIN.html" > -->
+					<div class="link">
+						<a href="index.html">완료</a>
+					</div>
+					<div class="link2">
+						<a href="login.html">취소</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- // Contents -->
+
+	<!-- Footer -->
+	<footer>
+		<div class="section">&copy;JEJU PICK 2022. All rights reserved.
+		</div>
+	</footer>
+	<!-- // Footer -->
+
+</body>
+</html>
